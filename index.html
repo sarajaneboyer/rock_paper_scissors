@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      Rock Paper Scissors!
+      Rock, Paper, Scissors!
     </title>
 
     <link href="styles.css" rel="stylesheet">
@@ -13,19 +13,22 @@
     <body>
         <h1>Rock, Paper, Scissors!</h1><hr />
 
-        <div id="the_game">
-            <div id="rps_user">
+        <div id="the_game"> <!-- div for the whole entire game -->
+            <div id="rps_user"> <!-- div for just the user's part of the game -->
               <h2>Take Your Pick - Rock, Paper, or Scissors</h2>
               <h4>Rock crushes scissors, Paper covers rock, and Scissors cut paper!
-                <div id="user_turn"></div>
-                  <select id="rps_user_selects" disabled>
+                <div id="user_turn"></div> <!-- div for the user's actual turn to go-->
+                  <select id="rps_user_selects">
                     <option value="rock">Rock</option>
                     <option value="paper">Paper</option>
                     <option value="scissors">Scissors</option>
                   </select>
-
+                  <input id="rps_user_submits" type="button" value="Try My Luck!">
             </div>
-            <div id="rps_computer">
+            
+            <div id="rps_computer"> <!-- div for the computer generated choice -->
+              <h2>Now the Computer's Choice!</h2>
+              <div id="rps_computer_turn"></div> <!-- div for the computer's part of the game-->
             </div>
 
         </div>
@@ -35,4 +38,6 @@
   
   </head>
 </html>
+
+
 
